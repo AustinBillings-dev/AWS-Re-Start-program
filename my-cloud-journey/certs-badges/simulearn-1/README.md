@@ -17,5 +17,7 @@
 - [AWS EFS Documentation] ,[AWS Skills Builder] 
 
 ## Screenshot of completion
-![EFS Lab Completion Screenshot](<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/e69421d6-ff5c-4749-ae48-75f82c4c5c1c" />)
+![EFS Lab Completion Screenshot]<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/81b6ef19-0f6c-49b4-a413-f4f7af74de4d" />
+
+
 
