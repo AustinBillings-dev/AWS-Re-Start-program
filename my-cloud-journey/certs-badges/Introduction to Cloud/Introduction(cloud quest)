@@ -1,0 +1,48 @@
+# AWS Cloud Practitioner Fundamentals - Cloud Quest Lab Summary
+
+## Topics Covered
+- Core AWS services: S3, EC2, EBS, EFS, RDS, DynamoDB, Route 53, ELB
+- Networking fundamentals: VPC, subnets, internet gateways, security groups, VPC peering
+- Storage options: Object storage with S3, block storage with EBS, file storage with EFS
+- Compute and scalability: EC2, Auto Scaling Groups, Launch Templates
+- Database services: Amazon RDS and DynamoDB for relational and NoSQL workloads
+- Access management: AWS IAM, policies, groups, and session management
+- DNS and traffic management: Amazon Route 53 and Elastic Load Balancing
+- Cost management and planning with AWS Pricing Calculator
+
+## Key Takeaways
+1. **Storage Services**
+   - **Amazon S3**: Object storage for static websites. Data stored as objects in buckets. Access controlled via bucket policies. JSON is the standard data format used across AWS.
+   - **Amazon EBS**: High-performance block storage attached to EC2 instances for persistent data.
+   - **Amazon EFS**: Serverless, scalable file storage that can be mounted across multiple EC2 instances in different AZs with file-level permissions.
+
+2. **Compute & Availability**
+   - **Amazon EC2**: On-demand virtual servers. Deploy across multiple Availability Zones for fault tolerance.
+   - **Availability Zones**: Isolated data centers with independent power and networking within an AWS Region.
+   - **Session Manager & EC2 Instance Connect**: Securely access instances without SSH keys, bastion hosts, or open inbound ports.
+
+3. **Networking**
+   - VPCs require explicit configuration of internet gateways, route tables, and security groups for internet access.
+   - **VPC Peering**: Enables private communication between VPCs across departments or accounts.
+
+4. **Databases**
+   - **Amazon RDS**: Managed relational database service that handles patching and infrastructure.
+   - **AWS DMS**: Migrates databases with minimal downtime.
+   - **Amazon DynamoDB**: NoSQL database with flexible schema. Uses composite primary keys for efficient querying of semi-structured data like user activity logs.
+
+5. **Scalability & Traffic Management**
+   - **Auto Scaling Groups**: Automatically adjust EC2 capacity based on demand or schedules using launch templates.
+   - **Elastic Load Balancing**: Distributes traffic across instances and AZs.
+   - **Amazon Route 53**: Manages DNS routing and domain name resolution.
+
+6. **Security & Cost**
+   - **AWS IAM**: Create users, groups, and custom policies for least-privilege access control.
+   - **AWS Pricing Calculator**: Generate cost estimates to plan budgets and compare service options before deployment.
+   - AWS resources provide elasticity, scaling infrastructure automatically with actual demand.
+
+## Resources
+- [AWS Well-Architected Framework]
+- [AWS S3 Documentation]
+- [AWS EC2 Documentation]
+- [AWS VPC Documentation]
+- [AWS Pricing Calculator]
