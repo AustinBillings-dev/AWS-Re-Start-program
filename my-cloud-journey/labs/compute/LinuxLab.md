@@ -1,5 +1,5 @@
 Linux Labs 
-Task 1: SSH to Amazon Linux EC2 & File Creation Script
+
 Objective
 Connect to an Amazon Linux EC2 instance via SSH and write a Bash script to create 25 empty files with incremental names.
 
