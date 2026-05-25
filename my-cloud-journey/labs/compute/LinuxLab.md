@@ -10,7 +10,9 @@ Task 1: Use SSH to connect to an Amazon Linux EC2 instance
 In this task, you will connect to a Amazon Linux EC2 instance. You will use an SSH utility to perform all of these operations. The following instructions vary slightly depending on whether you are using Windows or Mac/Linux.
 
 Downloaded labsuser.ppk key from the Credentials panel.
+
 Used PuTTY to SSH into the EC2 instance at PublicIP.
+
 Logged in as labsuser with the PPK key.
 
 Open putty.exe
@@ -34,5 +36,3 @@ completed the lab.
 
 
 
-
-_Add lab entries here as you complete them._
