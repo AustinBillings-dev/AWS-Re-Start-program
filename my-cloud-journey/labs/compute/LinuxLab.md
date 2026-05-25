@@ -1,6 +1,7 @@
 Linux Labs 
 
-Objective
+Objective:
+
 Connect to an Amazon Linux EC2 instance via SSH and write a Bash script to create 25 empty files with incremental names.
 
 Steps
