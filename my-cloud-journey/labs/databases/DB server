@@ -225,6 +225,52 @@ The Address Book application is using the RDS database to store information.
 Test the web application by adding, editing and removing contacts.
 
 The data is being persisted to the database and is automatically replicating to the second Availability Zone.
+Your Challenge
+To finish the Challenge do the following:
+
+Launch an Amazon RDS DB instance using either Amazon Aurora Provisioned DB or MySQL database engines. Make a note of the DB credentials, as it will be needed in next steps. Please note the following lab restrictions:
+
+DatabaseEngine: Supported engines are Amazon Aurora or MySQL. Amazon Aurora serverless is not available.
+Template: Choose Dev/Test or Free tier.
+Availability and durability: Avoid creating a standby instance.
+DB instance size: Choose Burstable classes - db.t3 instances of type db. t*.micro to db.t*.medium.
+Storage: Choose General Purpose SSD (gp2) of a size up to 100 GB. Provisioned IOPS access is restricted.
+Amazon VPC: Use the Lab VPC
+Security Group: Include a security group that will allow the LinuxServer to connect to the RDS instance.
+For MySQL, under Additional configuration - Enable Enhanced monitoring - Disable the option
+Purchasing Options: On-Demand instances are allowed. Other purchasing options are disabled.
+Click the Details  followed by Show.
+
+Click Download PEM (for Linux or macOS) or Download PPK (for Windows) depending on your local operating system.
+
+Make a note of the LinuxServer address.
+
+Connect (SSH) to the LinuxServer using the details you made a note of.
+
+Install a MySQL client, and use it to connect to your db. Some helpful information is available here
+
+
+
+Create a table RESTART with the following columns – Capture screenshot for submission
+
+Student ID (Number),
+Student Name,
+Restart City,
+Graduation Date (Date Time)
+Insert 10 sample rows into this table – Capture screenshot for submission
+
+Select all rows from this table – Capture screenshot for submission
+
+Create a table CLOUD_PRACTITIONER with the following columns – Capture screenshot for submission
+
+Student ID (Number)
+certification date (Date Time)
+Insert 5 sample rows into this table – Capture screenshot for submission
+
+Select all rows from this table – Capture screenshot for submission
+
+Perform an inner join between the 2 tables created above and display student ID, Student Name, Certification Date – Capture screenshot for submission    
+
 
  
 
