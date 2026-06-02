@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confirmation — Lekker Italia</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.confirm-page { min-height:100vh; display:flex; align-items:center; justify-content:center; background:linear-gradient(160deg,var(--bg) 0%,var(--bg-warm) 60%,#f0e0d0 100%); padding:2rem; }
+.confirm-box { background:#fff; border-radius:var(--radius); padding:3rem 2.5rem; max-width:500px; width:100%; text-align:center; box-shadow:var(--shadow-lg); }
+.confirm-icon { width:64px; height:64px; background:#27ae60; color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2rem; margin:0 auto 1.5rem; }
+.confirm-box h2 { font-size:1.6rem; margin-bottom:.5rem; }
+.confirm-box p { color:var(--text-light); margin-bottom:1.5rem; font-size:.95rem; }
+.confirm-detail { background:var(--bg-warm); border-radius:var(--radius-sm); padding:1.2rem; margin-bottom:1.5rem; text-align:left; }
+.confirm-detail p { margin-bottom:.4rem; font-size:.88rem; }
+.confirm-detail strong { color:var(--text); }
+</style>
+</head>
+<body>
+
+<nav id="navbar" class="scrolled">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Lekker Italia</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="booking.html">Bookings</a></li>
+      <li><a href="order.html">Order</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="confirm-page">
+  <div class="confirm-box">
+    <div class="confirm-icon">&#10003;</div>
+    <h2 id="confirm-title">Thank You!</h2>
+    <p id="confirm-msg">Your request has been received.</p>
+    <div class="confirm-detail" id="confirm-detail"></div>
+    <a href="index.html" class="btn btn-primary">Back to Home</a>
+    <a href="menu.html" class="btn btn-secondary" style="margin-left:.8rem;">View Menu</a>
+  </div>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const type = params.get('type');
+const id = params.get('id');
+
+if (type === 'order') {
+  document.getElementById('confirm-title').textContent = 'Order Placed!';
+  document.getElementById('confirm-msg').textContent = 'We have received your order and will confirm shortly.';
+  document.getElementById('confirm-detail').innerHTML = `<p><strong>Order #:</strong> ${id}</p><p><strong>Status:</strong> Received</p><p><strong>Pickup:</strong> Our Cape Town kitchen</p><p style="margin-top:.8rem;font-size:.8rem;color:var(--muted);">A confirmation SMS will be sent to your phone.</p>`;
+} else if (type === 'booking') {
+  document.getElementById('confirm-title').textContent = 'Booking Requested!';
+  document.getElementById('confirm-msg').textContent = 'We will confirm your table reservation shortly.';
+  document.getElementById('confirm-detail').innerHTML = `<p><strong>Reference #:</strong> ${id}</p><p><strong>Status:</strong> Pending confirmation</p><p style="margin-top:.8rem;font-size:.8rem;color:var(--muted);">You will receive an email confirmation within 2 hours.</p>`;
+} else {
+  document.getElementById('confirm-detail').innerHTML = '<p>Thank you for choosing Lekker Italia.</p>';
+}
+</script>
+</body>
+</html>

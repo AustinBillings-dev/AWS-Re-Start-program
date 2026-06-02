@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lekker Italia — Italian Restaurant Cape Town</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* Hero with background image */
+  .hero-img {
+    position: relative;
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg, 
+      rgba(253, 248, 243, 0.88) 0%, 
+      rgba(245, 237, 228, 0.82) 40%,
+      rgba(253, 248, 243, 0.75) 100%
+    );
+    backdrop-filter: blur(2px);
+  }
+  .hero-img .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  .hero-img h1,
+  .hero-img .hero-tagline,
+  .hero-img p {
+    text-shadow: 0 2px 12px rgba(44, 24, 16, 0.08);
+  }
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Lekker Italia</a>
+    <ul class="nav-links">
+      <li><a href="index.html#story">Our Story</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="booking.html">Book a Table</a></li>
+      <li><a href="order.html">Order Online</a></li>
+      <li id="user-area">
+        <span id="user-name" style="display:none"></span>
+        <a href="login.html" class="btn-sm btn-outline" id="btn-login">Sign In</a>
+        <button class="btn-sm btn-solid" id="btn-logout" style="display:none" onclick="doLogout()">Sign Out</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero with subtle background image -->
+<section class="hero hero-img">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">Since 2015 &middot; Cape Town</span>
+    <h1>Italian Restaurant<br>in Cape Town</h1>
+    <p class="hero-tagline">Where Every Meal Feels Like Home</p>
+    <p>Handmade Italian cuisine crafted with passion, using the freshest local Cape ingredients and time-honoured recipes from Rome and Milan.</p>
+    <div class="hero-cta">
+      <a href="booking.html" class="btn btn-primary">Book a Table</a>
+      <a href="menu.html" class="btn btn-secondary">View Menu</a>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="story-grid">
+    <div class="story-img"><img src="images/interior.jpg" alt="Lekker Italia Interior"></div>
+    <div class="story-text">
+      <span class="sec-label">Our Story</span>
+      <h2>A Family Passion for Authentic Italian Flavours</h2>
+      <p>Founded in 2015 in the heart of Cape Town, Lekker Italia began as a small family kitchen with a big dream — to bring the true tastes of Italy to the Mother City. Our head chef trained in the trattorias of Rome and the osterias of Milan.</p>
+      <p>Every dish carries generations of culinary tradition. Our carbonara is made the Roman way with guanciale and Pecorino Romano. Our osso buco simmers for hours until the veal melts off the bone.</p>
+      <div class="quote">"Good food is all the sweeter when shared with good friends."</div>
+    </div>
+  </div>
+</section>
+
+<section id="menu-preview">
+  <div class="sec-head">
+    <span class="sec-label">Our Menu</span>
+    <h2 class="sec-title">Signature Dishes</h2>
+    <p class="sec-sub">Three icons of Italian cuisine, prepared with imported ingredients and Cape Town's freshest produce</p>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <div class="menu-img"><img src="images/carbonara.jpg" alt="Carbonara"></div>
+      <div class="menu-body">
+        <div class="menu-head"><h3 class="menu-title">Spaghetti alla Carbonara</h3><span class="menu-price">R195</span></div>
+        <p class="menu-desc">True Roman classic with crispy guanciale, egg yolks, Pecorino Romano DOP.</p>
+        <span class="menu-origin">Rome, Lazio</span>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-img"><img src="images/osso-buco.jpg" alt="Osso Buco"><span class="menu-badge">Signature</span></div>
+      <div class="menu-body">
+        <div class="menu-head"><h3 class="menu-title">Osso Buco alla Milanese</h3><span class="menu-price">R285</span></div>
+        <p class="menu-desc">Braised veal shanks slow-cooked four hours, served with saffron risotto.</p>
+        <span class="menu-origin">Milan, Lombardy</span>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-img"><img src="images/risotto.jpg" alt="Risotto"></div>
+      <div class="menu-body">
+        <div class="menu-head"><h3 class="menu-title">Risotto alla Milanese</h3><span class="menu-price">R165</span></div>
+        <p class="menu-desc">Carnaroli rice with bone marrow, butter, onion, and precious saffron threads.</p>
+        <span class="menu-origin">Milan, Lombardy</span>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:2.5rem;">
+    <a href="menu.html" class="btn btn-primary">See Full Menu</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Lekker Italia</div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="booking.html">Bookings</a></li>
+    <li><a href="order.html">Order</a></li>
+  </ul>
+  <p class="footer-copy">&copy; 2025 Lekker Italia. Cape Town, South Africa. All rights reserved.</p>
+</footer>
+
+<script src="js/auth.js"></script>
+<script>
+window.addEventListener('scroll', () => document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40));
+checkSession();
+</script>
+</body>
+</html>
