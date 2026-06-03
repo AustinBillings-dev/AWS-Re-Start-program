@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Lekker Italia Cape Town</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="navbar" class="scrolled">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Lekker Italia</a>
+    <ul class="nav-links">
+      <li><a href="index.html#story">Our Story</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="booking.html">Book a Table</a></li>
+      <li><a href="order.html">Order Online</a></li>
+      <li id="user-area">
+        <span id="user-name" style="display:none"></span>
+        <a href="login.html" class="btn-sm btn-outline" id="btn-login">Sign In</a>
+        <button class="btn-sm btn-solid" id="btn-logout" style="display:none" onclick="doLogout()">Sign Out</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section style="padding-top:7rem;">
+  <div class="sec-head">
+    <span class="sec-label">Our Menu</span>
+    <h2 class="sec-title">Signature Dishes</h2>
+    <p class="sec-sub">Five icons of Italian cuisine, prepared with imported ingredients and Cape Town's freshest produce</p>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <div class="menu-img"><img src="images/carbonara.jpg" alt="Carbonara"></div>
+      <div class="menu-body">
+        <div class="menu-head"><h3 class="menu-title">Spaghetti alla Carbonara</h3><span class="menu-price">R195</span></div>
+        <p class="menu-desc">True Roman classic. Spaghetti with crispy guanciale, farm-fresh egg yolks, aged Pecorino Romano DOP, and cracked black pepper. No cream — just emulsion.</p>
+        <span class="menu-origin">Rome, Lazio</span>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-img"><img src="images/osso-buco.jpg" alt="Osso Buco"><span class="menu-badge">Signature</span></div>
+      <div class="menu-body">
+        <div class="menu-head"><h3 class="menu-title">Osso Buco alla Milanese</h3><span class="menu-price">R285</span></div>
+        <p class="menu-desc">Braised veal shanks slow-cooked for four hours in white wine and broth until fork-tender. Served with saffron risotto and gremolata.</p>
+        <span class="menu-origin">Milan, Lombardy</span>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-img"><img src="images/risotto.jpg" alt="Risotto"></div>
+      <div class="menu-body">
+        <div class="menu-head"><h3 class="menu-title">Risotto alla Milanese</h3><span class="menu-price">R165</span></div>
+        <p class="menu-desc">Carnaroli rice slowly stirred to creamy perfection with bone marrow, butter, onion, and precious saffron threads from San Gimignano.</p>
+        <span class="menu-origin">Milan, Lombardy</span>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-img"><img src="images/pizza.jpg" alt="Pizza"></div>
+      <div class="menu-body">
+        <div class="menu-head"><h3 class="menu-title">Pizza Margherita</h3><span class="menu-price">R145</span></div>
+        <p class="menu-desc">San Marzano tomatoes, fresh fior di latte mozzarella, basil, and extra virgin olive oil on a 48-hour fermented dough, baked in our wood-fired oven.</p>
+        <span class="menu-origin">Naples, Campania</span>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-img"><img src="images/tiramisu.jpg" alt="Tiramisu"></div>
+      <div class="menu-body">
+        <div class="menu-head"><h3 class="menu-title">Tiramisu Classico</h3><span class="menu-price">R95</span></div>
+        <p class="menu-desc">Espresso-soaked savoiardi ladyfingers layered with mascarpone cream and dusted with Valrhona cocoa. Made fresh every morning.</p>
+        <span class="menu-origin">Veneto, Italy</span>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:3rem;">
+    <a href="order.html" class="btn btn-primary">Order Online</a>
+    <a href="booking.html" class="btn btn-secondary" style="margin-left:1rem;">Book a Table</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Lekker Italia</div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="booking.html">Bookings</a></li>
+    <li><a href="order.html">Order</a></li>
+  </ul>
+  <p class="footer-copy">&copy; 2026 Lekker Italia. Cape Town, South Africa.</p>
+</footer>
+
+<script src="js/auth.js"></script>
+<script>checkSession();</script>
+</body>
+</html>

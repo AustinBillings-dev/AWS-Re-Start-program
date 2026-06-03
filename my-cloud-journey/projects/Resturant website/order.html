@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Online — Lekker Italia Cape Town</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="navbar" class="scrolled">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Lekker Italia</a>
+    <ul class="nav-links">
+      <li><a href="index.html#story">Our Story</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="booking.html">Book a Table</a></li>
+      <li><a href="order.html">Order Online</a></li>
+      <li id="user-area">
+        <span id="user-name" style="display:none"></span>
+        <a href="login.html" class="btn-sm btn-outline" id="btn-login">Sign In</a>
+        <button class="btn-sm btn-solid" id="btn-logout" style="display:none" onclick="doLogout()">Sign Out</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section style="padding-top:7rem;">
+  <div class="sec-head">
+    <span class="sec-label">Order Online</span>
+    <h2 class="sec-title">Order for Pickup</h2>
+    <p class="sec-sub">Place your order and we'll have it ready for collection at our Cape Town kitchen</p>
+  </div>
+
+  <div style="max-width:700px;margin:0 auto;">
+    <div class="dash-box" style="background:var(--dark);color:#fff;">
+      <form onsubmit="event.preventDefault(); placeOrder(this);">
+        <div class="form-row">
+          <div class="form-group"><label>Your Name</label><input type="text" name="name" placeholder="Full name" required></div>
+          <div class="form-group"><label>Phone</label><input type="tel" name="phone" placeholder="082 123 4567" required></div>
+        </div>
+        <div class="form-group"><label>Pickup Time</label><select name="pickup" required><option value="">Select time</option><option>12:00</option><option>13:00</option><option>17:30</option><option>18:30</option><option>19:30</option></select></div>
+
+        <div class="form-group">
+          <label>Select Your Dishes</label>
+          <div class="order-item"><img src="images/carbonara.jpg" alt=""><div class="order-info"><div class="order-title">Spaghetti alla Carbonara</div><div class="order-price">R195</div></div><div class="qty"><button type="button" class="qty-btn" onclick="updateQty(this,-1)">&minus;</button><span class="qty-val" data-item="carbonara">0</span><button type="button" class="qty-btn" onclick="updateQty(this,1)">+</button></div></div>
+          <div class="order-item"><img src="images/osso-buco.jpg" alt=""><div class="order-info"><div class="order-title">Osso Buco alla Milanese</div><div class="order-price">R285</div></div><div class="qty"><button type="button" class="qty-btn" onclick="updateQty(this,-1)">&minus;</button><span class="qty-val" data-item="osso">0</span><button type="button" class="qty-btn" onclick="updateQty(this,1)">+</button></div></div>
+          <div class="order-item"><img src="images/risotto.jpg" alt=""><div class="order-info"><div class="order-title">Risotto alla Milanese</div><div class="order-price">R165</div></div><div class="qty"><button type="button" class="qty-btn" onclick="updateQty(this,-1)">&minus;</button><span class="qty-val" data-item="risotto">0</span><button type="button" class="qty-btn" onclick="updateQty(this,1)">+</button></div></div>
+          <div class="order-item"><img src="images/pizza.jpg" alt=""><div class="order-info"><div class="order-title">Pizza Margherita</div><div class="order-price">R145</div></div><div class="qty"><button type="button" class="qty-btn" onclick="updateQty(this,-1)">&minus;</button><span class="qty-val" data-item="pizza">0</span><button type="button" class="qty-btn" onclick="updateQty(this,1)">+</button></div></div>
+          <div class="order-item"><img src="images/tiramisu.jpg" alt=""><div class="order-info"><div class="order-title">Tiramisu Classico</div><div class="order-price">R95</div></div><div class="qty"><button type="button" class="qty-btn" onclick="updateQty(this,-1)">&minus;</button><span class="qty-val" data-item="tiramisu">0</span><button type="button" class="qty-btn" onclick="updateQty(this,1)">+</button></div></div>
+        </div>
+        <button type="submit" class="btn btn-gold">Place Order</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Lekker Italia</div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="booking.html">Bookings</a></li>
+    <li><a href="order.html">Order</a></li>
+  </ul>
+  <p class="footer-copy">&copy; 2026 Lekker Italia. Cape Town, South Africa.</p>
+</footer>
+
+<script src="js/auth.js"></script>
+<script>
+checkSession();
+function updateQty(btn, change) {
+  const span = btn.parentElement.querySelector('.qty-val');
+  let v = parseInt(span.textContent) + change;
+  if (v < 0) v = 0;
+  span.textContent = v;
+}
+function placeOrder(form) {
+  const fd = new FormData(form);
+  const items = [];
+  document.querySelectorAll('.qty-val').forEach(el => {
+    const qty = parseInt(el.textContent);
+    if (qty > 0) items.push({ item: el.dataset.item, qty: qty });
+  });
+  if (!items.length) { alert('Please select at least one dish.'); return; }
+  const order = {
+    id: Date.now(),
+    name: fd.get('name'), phone: fd.get('phone'), pickup: fd.get('pickup'),
+    items: items, status: 'Received', createdAt: new Date().toISOString()
+  };
+  const key = 'Lekker Italia_orders_' + (currentUser ? currentUser.email : fd.get('phone'));
+  const orders = JSON.parse(localStorage.getItem(key) || '[]');
+  orders.unshift(order);
+  localStorage.setItem(key, JSON.stringify(orders));
+  form.reset();
+  document.querySelectorAll('.qty-val').forEach(el => el.textContent = '0');
+  window.location.href = 'confirmation.html?id=' + order.id + '&type=order';
+}
+</script>
+</body>
+</html>
