@@ -11,7 +11,9 @@ Launch an Amazon Elastic Compute Cloud (Amazon EC2) instance into a VPC
 
 Scenario
 
-In this lab, you use Amazon Virtual Private Cloud (VPC) to create your own VPC and add additional components to produce a customized network for a Fortune 100 customer. You also create security groups for your EC2 instance. You then configure and customize an EC2 instance to run a web server and launch it into the VPC that looks like the following customer diagram:
+In this lab, you use Amazon Virtual Private Cloud (VPC) to create your own VPC and add additional components to produce a customized network for a Fortune 100 customer. You also create security groups for your EC2 instance. You then configure and customize an EC2 instance to run a web server and launch it into the VPC that looks like the following customer diagram:![alt text](<WhatsApp Image 2026-06-04 at 17.28.09.jpeg>)
+
+
 
  
 Task 1: Create your VPC
@@ -128,7 +130,9 @@ Choose Save associations.
  Your VPC now has public and private subnets configured in two Availability Zones:
 
  The creation of the networking components and routing components
- Figure: The creation of the networking resources and routing components and attachment of these resources that make the VPC functional as a network.
+ Figure: The creation of the networking resources and routing components and attachment of these resources that make the VPC functional as a network.![alt text](<WhatsApp Image 2026-06-04 at 19.32.10.jpeg>)
+
+
 
 Task 4: Create a VPC security group
 In this task, you create a VPC security group, which acts as a virtual firewall for your instance. When you launch an instance, you associate one or more security groups with the instance. You can add rules to each security group that allow traffic to or from its associated instances.
@@ -220,6 +224,5 @@ A picture of the end product, which is what the customer requested: a fully func
 
 Figure: A picture of the end product, which is the delivery of the exact customer request: a fully functional VPC with its resources (network and security) and a web server.
 
- .
+![alt text](<WhatsApp Image 2026-06-04 at 19.31.11.jpeg>)
 
-Recap
