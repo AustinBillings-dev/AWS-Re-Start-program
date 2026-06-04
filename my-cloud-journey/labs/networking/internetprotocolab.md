@@ -127,3 +127,124 @@ You can use the curl command to transfer data between you and the server. The cu
 
 Lab Complete 
  Congratulations! You have completed the lab.
+
+Second Lab
+Troubleshooting a Network Issue
+Objectives
+After completing this lab, you should be able to:
+
+Analyze the customer scenario
+
+Troubleshoot the issue
+
+Scenario
+Your role is a cloud support engineer at Amazon Web Services (AWS). During your shift, a consulting company has a networking issue within their AWS infrastructure. The following is the email and an attachment of their architecture:
+
+Email from the customer
+Hello, Cloud Support!
+
+When I create an Apache server through the command line, I cannot ping it. I also get an error when I enter the IP address in the browser. Can you please help figure out what is blocking my connection?
+
+Thanks!
+
+Ana
+Contractor
+
+ 
+
+Customer diagram
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/4d0e7606-ff47-4a00-b94c-b6d74a292d8f" />
+
+Lab 
+Task 2: Install httpd
+For this task, you install httpd prior to checking the customer's resources.
+
+In the scenario, Ana, the customer requesting assistance, cannot reach her Apache server or get it to successfully load on a webpage from her virtual private cloud (VPC).     
+
+You have an exact replica of the customer's VPC and its resources to troubleshoot the issue.
+
+Helpful hint
+
+You may have to use sudo to complete this exercise if you are not root.
+
+To check the status of the httpd service, enter the following systemctl command in the terminal window, and press Enter:
+
+sudo systemctl status httpd.service
+After you run this command, you should see a result similar to the following, which indicates that the service is inactive:
+
+The output of sudo systemctl status httpd.service command shows that the service is inactive because it hasn't been started yet.
+
+Figure: The status shows that the httpd service is inactive because it has not been started yet. This output indicates that the httpd service is loaded (already installed) but is currently inactive.
+
+To start the httpd service, enter the following command, and press Enter:
+
+sudo systemctl start httpd.service
+To check the status of the httpd service again, enter the following systemctl command, and press Enter:
+
+sudo systemctl status httpd.service
+After you run this command, you should see a result similar to the following, which indicates that the service is active:
+
+The output status indicating that the httpd service is active 
+Figure: The Apache HTTP Server should be in the Active status.
+
+The httpd service is now running. Now check if it's working. In the following URL, replace  with the public IP of your instance located in the details button in the Vocareum environment. Open a new browser tab, and enter the public IP of your instance with the following format:
+
+http://<PUBLIC IP OF INSTANCE>
+The following image shows the expected output; however, the page will not load at this point in the lab:
+
+The test page of the Apache HTTP server when you successfully install Apache
+Figure: The test page of the Apache HTTP server when Apache is successfully installed
+
+ 
+
+Task 3: Investigate the customer's VPC configuration
+For this task, you will investigate the customer's VPC and their resources.
+
+In the scenario, Ana, the customer requesting assistance, cannot reach her Apache server even though it is active. You have an exact replica of the customer's VPC and its resources. Keep the error that you received when trying to load Apache in the web browser in mind while troubleshooting this issue.
+
+At the upper right of these instructions, choose AWS. The AWS Management Console opens in a new browser tab.
+
+Once you are in the AWS console, in the Recently visited services section, you might see VPC. If you do, choose VPC. If you do not, navigate to the upper left, and choose the Services dropdown menu. Under the Networking & Content Delivery services, choose VPC.
+
+The AWS Management Console and the recently visited services: Under the Recently visited services, you should be able to choose the Amazon VPC service. If not, you can use the Services dropdown list. 
+
+Figure: Recently visited services in the AWS console.
+
+The services dropdown list and how to find the Amazon VPC service by using the search bar or scrolling to the bottom in the Networking & Content Delivery section and choosing the Amazon VPC service 
+
+Figure: Services navigation dropdown list.
+
+Use the left navigation pane and check each service within the VPC to confirm that each resource is configured correctly.
+
+The left hand navigation pane of the VPC and its services which include but are not limited to: Your VPCs, Subnets, Route Tables, Internet Gateways, Egress Only Internet Gateways, Carrier Gateways, Elastic IPs, Endpoints, NAT Gateways, and Peering Connections. 
+
+Figure: The left navigation pane of the VPC and its services.
+
+Subnets - Are the route tables associated to the correct subnets?
+Route Tables - Do the route tables have the correct routes?
+Internet Gateway - Is there an Internet Gateway and is it attached?
+Security Groups and network ACLs - Are the correct rules configured?
+Hints
+
+Can you ping websites such as www.amazon.com? If so, you can get to the internet (the internet gateway and route table should work).
+Apache is a server that commonly uses HTTP/S as ports.
+Once you have gone through each option in the previous step, such as routing, security, and resources. Confirm that the Apache HTTP server is working by testing the following URL into a browser by replacing  with the public IP your your instance that can be found in the details drop down in Vocareum.
+
+http://<PUBLIC IP OF INSTANCE>
+If Apache is successfully installed, the following is the expected output:
+
+The test page of the Apache HTTP server when you successfully install Apache 
+
+Figure: The test page of the Apache HTTP server when Apache is successfully installed.
+
+
+ 
+
+Recap
+In this lab
+In this lab, you troubleshot the customer's networking issue. You found that the customer had an issue with their security ports in the security group. After fixing the issue, you were able to successfully load the Apache server.
+
+Lab Complete 
+  
+
+
