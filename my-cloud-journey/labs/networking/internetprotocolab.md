@@ -122,7 +122,8 @@ Figure: The results of the curl command: the output tests the connection to a we
 
 You can use the curl command to transfer data between you and the server. The curl command can use many different protocols, but the most common are HTTP and HTTPS. You can use the curl command to troubleshoot communication from your local device to a server.  
 
- 
+ <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/04281ae4-0c59-481c-a7bf-6a9b3f7d5d0a" />
+
 
 Lab Complete 
  Congratulations! You have completed the lab.
