@@ -1,0 +1,16 @@
+Build Your VPC and Launch a Web Server
+ 
+
+Objectives
+After completing this lab, you should be able to:
+
+Create a virtual private cloud (VPC)
+Create subnets
+Configure a security group
+Launch an Amazon Elastic Compute Cloud (Amazon EC2) instance into a VPC
+
+Scenario
+
+In this lab, you use Amazon Virtual Private Cloud (VPC) to create your own VPC and add additional components to produce a customized network for a Fortune 100 customer. You also create security groups for your EC2 instance. You then configure and customize an EC2 instance to run a web server and launch it into the VPC that looks like the following customer diagram:
+
+ 
