@@ -215,6 +215,9 @@ Symmetric key decryption.
 Summary of task 3
 In this task, you learned how to encrypt plaintext data into ciphertext by running the --encrypt command. You then successfully decrypted the ciphertext back into the original, readable plaintext data.
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/cc3256cb-aa06-4236-a340-3995eefed635" />
+
+
 Conclusion 
  Congratulations! You now have successfully:
 
