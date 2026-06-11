@@ -6,6 +6,7 @@ Solution Request
 
 Implement IAM groups with least-privilege permissions to control support engineers' access to AWS resources.
 
+
 ## Key Takeaways
 
 This solution demonstrates AWS Identity and Access Management (IAM) user group creation to manage permissions for multiple users within an organization.
@@ -25,4 +26,11 @@ Following AWS's default deny principle, the SupportEngineers group lacks Amazon 
 Adding an RDS read-only policy to the group allows SupportEngineers to view Amazon RDS information.
 
 ## Resources
--
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a9cf9417-1bfe-42f8-80bb-f81ba89e58fa" />
+
+DIY Goals
+Grant the "SupportEngineers" group read-only access to Amazon RDS.
+
+ <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2fc121cc-824f-41cf-a448-032e88298ce2" />
+
