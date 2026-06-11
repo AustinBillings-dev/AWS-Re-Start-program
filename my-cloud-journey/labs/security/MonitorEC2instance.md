@@ -181,8 +181,9 @@ Navigate to your email inbox for the email address that you used to configure th
 Summary of task 3
 In this task, you ran a command to load the EC2 instance to 100 percent for 400 seconds. This increase in CPU utilization activated the alarm to go into the In alarm state, and you confirmed the spike in the CPU utilization by viewing the CloudWatch graph. You also received a email notification alerting you of the In alarm state.
 
- <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c1296edf-b5e7-4aa3-a0fe-c1e2aab8bcf8" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/5b3b6f07-28ed-4520-8fc8-18c66a99fc34" />
 
+ <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c1296edf-b5e7-4aa3-a0fe-c1e2aab8bcf8" />
 
 Task 4: Create a CloudWatch dashboard
 In this task, you create a CloudWatch dashboard using the same CPUUtilization metrics that you have used throughout this lab.
