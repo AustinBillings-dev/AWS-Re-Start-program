@@ -88,6 +88,9 @@ In the terminal, run the file with python3 filename.py (replace filename.py with
 
 In the terminal output, confirm that the program prints the words Hello World.
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/4e20d41a-f369-4785-a7ff-9bbfa3881899" />
+
+
 Congratulations! You have written your first Python program.
 
 End Lab
@@ -99,17 +102,6 @@ A panel indicates that DELETE has been initiated... You may close this message b
 
 A message Ended AWS Lab Successfully is briefly displayed, indicating that the lab has ended.
 ​
-
-Additional Resources
-For more information about AWS Training and Certification, see https://aws.amazon.com/training/.
-
-Your feedback is welcome and appreciated.
-If you would like to share any suggestions or corrections, please provide the details in our AWS Training and Certification Contact Form.
-
-© 2022 Amazon Web Services, Inc. and its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.
-
-[(x)] Yes
-[( )] No
 
  
 
@@ -425,19 +417,8 @@ A panel indicates that DELETE has been initiated... You may close this message b
 
 A message Ended AWS Lab Successfully is briefly displayed, indicating that the lab has ended.
 ​
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/1ba9aed4-3c4b-4163-b4a2-a15394bcb0ad" />
 
-Additional Resources
-For more information about AWS Training and Certification, see https://aws.amazon.com/training/.
-
-Your feedback is welcome and appreciated.
-If you would like to share any suggestions or corrections, please provide the details in our AWS Training and Certification Contact Form.
-
-© 2022 Amazon Web Services, Inc. and its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.
-
-[(x)] Yes
-[( )] No
-
- 
 
  
 
@@ -617,25 +598,9 @@ Congratulations! You have used Python to concatenate strings, take input from th
 End Lab
  Congratulations! You have completed the lab.
 
-Choose  End Lab at the top of this page, and then select Yes to confirm that you want to end the lab.
 
-A panel indicates that DELETE has been initiated... You may close this message box now.
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/fd54dcf3-965d-416c-bcaa-9f74f3ba05de" />
 
-A message Ended AWS Lab Successfully is briefly displayed, indicating that the lab has ended.
-​
-
-Additional Resources
-For more information about AWS Training and Certification, see https://aws.amazon.com/training/.
-
-Your feedback is welcome and appreciated.
-If you would like to share any suggestions or corrections, please provide the details in our AWS Training and Certification Contact Form.
-
-© 2022 Amazon Web Services, Inc. and its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.
-
-[(x)] Yes
-[( )] No
-
- 
 
  
 
@@ -849,27 +814,8 @@ Congratulations! You have worked with the list, tuple, and dictionary data types
 End Lab
  Congratulations! You have completed the lab.
 
-Choose  End Lab at the top of this page, and then select Yes to confirm that you want to end the lab.
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/79663dec-72eb-43e6-986c-10bc48d97316" />
 
-A panel indicates that DELETE has been initiated... You may close this message box now.
-
-A message Ended AWS Lab Successfully is briefly displayed, indicating that the lab has ended.
-​
-
-Additional Resources
-For more information about AWS Training and Certification, see https://aws.amazon.com/training/.
-
-Your feedback is welcome and appreciated.
-If you would like to share any suggestions or corrections, please provide the details in our AWS Training and Certification Contact Form.
-
-© 2022 Amazon Web Services, Inc. and its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.
-
-[(x)] Yes
-[( )] No
-
- 
-
- 
 
 @@ 0 5 - Categorize Values
 
@@ -954,26 +900,9 @@ Congratulations! You have worked with the list data type and learned about Pytho
 End Lab
  Congratulations! You have completed the lab.
 
-Choose  End Lab at the top of this page, and then select Yes to confirm that you want to end the lab.
-
-A panel indicates that DELETE has been initiated... You may close this message box now.
-
-A message Ended AWS Lab Successfully is briefly displayed, indicating that the lab has ended.
-​
-
-Additional Resources
-For more information about AWS Training and Certification, see https://aws.amazon.com/training/.
-
-Your feedback is welcome and appreciated.
-If you would like to share any suggestions or corrections, please provide the details in our AWS Training and Certification Contact Form.
-
-© 2022 Amazon Web Services, Inc. and its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.
-
-[(x)] Yes
-[( )] No
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f4295f85-0673-442a-beda-fbe97c62ff63" />
 
  
-
  
 
 @@ 0 6 - Composite Data Types
@@ -1343,24 +1272,7 @@ Congratulations! You have written a Python script that uses if, elif, and else s
 End Lab
  Congratulations! You have completed the lab.
 
-Choose  End Lab at the top of this page, and then select Yes to confirm that you want to end the lab.
-
-A panel indicates that DELETE has been initiated... You may close this message box now.
-
-A message Ended AWS Lab Successfully is briefly displayed, indicating that the lab has ended.
-​
-
-Additional Resources
-For more information about AWS Training and Certification, see https://aws.amazon.com/training/.
-
-Your feedback is welcome and appreciated.
-If you would like to share any suggestions or corrections, please provide the details in our AWS Training and Certification Contact Form.
-
-© 2022 Amazon Web Services, Inc. and its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.
-
-[(x)] Yes
-[( )] No
-
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/09586578-f5c2-461e-8291-1fd830f7c676" />
  
 
  
@@ -1522,28 +1434,11 @@ Here is an explanation of what happened in those two lines. The for statement us
 
 Congratulations! You have worked with while and for loops in Python.
 
-End Lab
- Congratulations! You have completed the lab.
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0e120ef8-bf92-4c4d-9ea5-16c8aceeefec" />
 
-Choose  End Lab at the top of this page, and then select Yes to confirm that you want to end the lab.
 
-A panel indicates that DELETE has been initiated... You may close this message box now.
 
-A message Ended AWS Lab Successfully is briefly displayed, indicating that the lab has ended.
-​
-
-Additional Resources
-For more information about AWS Training and Certification, see https://aws.amazon.com/training/.
-
-Your feedback is welcome and appreciated.
-If you would like to share any suggestions or corrections, please provide the details in our AWS Training and Certification Contact Form.
-
-© 2022 Amazon Web Services, Inc. and its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.
-
-[(x)] Yes
-[( )] No
-
- 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/abd10930-83fc-4463-a4c6-6bf08dd4ee02" />
 
  
 
@@ -2029,19 +1924,9 @@ A panel indicates that DELETE has been initiated... You may close this message b
 
 A message Ended AWS Lab Successfully is briefly displayed, indicating that the lab has ended.
 ​
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/51576531-3b51-4708-a9cc-eb612a83a21f" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7eac5177-284f-42d5-b4b9-fe3c1d801543" />
 
-Additional Resources
-For more information about AWS Training and Certification, see https://aws.amazon.com/training/.
-
-Your feedback is welcome and appreciated.
-If you would like to share any suggestions or corrections, please provide the details in our AWS Training and Certification Contact Form.
-
-© 2022 Amazon Web Services, Inc. and its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.
-
-[(x)] Yes
-[( )] No
-
- 
 
  
 
@@ -2185,20 +2070,7 @@ Choose  End Lab at the top of this page, and then select Yes to confirm that you
 A panel indicates that DELETE has been initiated... You may close this message box now.
 
 A message Ended AWS Lab Successfully is briefly displayed, indicating that the lab has ended.
-​
-
-Additional Resources
-For more information about AWS Training and Certification, see https://aws.amazon.com/training/.
-
-Your feedback is welcome and appreciated.
-If you would like to share any suggestions or corrections, please provide the details in our AWS Training and Certification Contact Form.
-
-© 2022 Amazon Web Services, Inc. and its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.
-
-[(x)] Yes
-[( )] No
-
- 
+​ 
 
  
 
@@ -2395,29 +2267,12 @@ Re-run the program with different inputs.
 Congratulations! You have worked with user-defined functions and implemented an encryption program!
 
 End Lab
- Congratulations! You have completed the lab.
+Congratulations! You have completed the lab.
 
-Choose  End Lab at the top of this page, and then select Yes to confirm that you want to end the lab.
 
-A panel indicates that DELETE has been initiated... You may close this message box now.
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c8d0f6e2-a599-46df-bb13-74a1f20a5d64" />
 
-A message Ended AWS Lab Successfully is briefly displayed, indicating that the lab has ended.
-​
 
-Additional Resources
-For more information about AWS Training and Certification, see https://aws.amazon.com/training/.
-
-Your feedback is welcome and appreciated.
-If you would like to share any suggestions or corrections, please provide the details in our AWS Training and Certification Contact Form.
-
-© 2022 Amazon Web Services, Inc. and its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.
-
-[(x)] Yes
-[( )] No
-
- 
-
- 
 
 @@ 0 14 - File Handlers
 
@@ -2796,26 +2651,13 @@ Gathering active process information with command: ps -x
 21164 pts/459  S      0:00 bash --rcfile /home/ccc_4dfa91ec5a_45122/.termrc -
  Congratulations! You have called Bash commands from Python.
 
+ <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3b0f34ab-a4b0-41f2-a96e-9f0e2cca7e26" />
+
+
 End Lab
  Congratulations! You have completed the lab.
 
-Choose  End Lab at the top of this page, and then select Yes to confirm that you want to end the lab.
 
-A panel indicates that DELETE has been initiated... You may close this message box now.
-
-A message Ended AWS Lab Successfully is briefly displayed, indicating that the lab has ended.
-​
-
-Additional Resources
-For more information about AWS Training and Certification, see https://aws.amazon.com/training/.
-
-Your feedback is welcome and appreciated.
-If you would like to share any suggestions or corrections, please provide the details in our AWS Training and Certification Contact Form.
-
-© 2022 Amazon Web Services, Inc. and its affiliates. All rights reserved. This work may not be reproduced or redistributed, in whole or in part, without prior written permission from Amazon Web Services, Inc. Commercial copying, lending, or selling is prohibited.
-
-[(x)] Yes
-[( )] No
 
  
 
