@@ -108,6 +108,9 @@ To verify that the AWS CLI is now working, run the following aws help command. T
 aws help
 At the : prompt, enter q to exit.
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f57cb9b2-2017-4403-8d2e-14130fe0e390" />
+
+
 Task 3: Observe IAM configuration details in the AWS Management Console
 In this task, you observe the IAM configuration details for the EC2 instance in the AWS Management Console. 
 
@@ -124,6 +127,10 @@ This lab_policy document is formatted in JSON. The IAM policy grants the awsstud
 Choose the Security credentials tab. In the Access keys section, locate the awsstudent user's access key ID. 
 
 Note: Once the access key is created, you must save the secret access key locally at the time that the key is created. For this lab, you can find the access key ID and the secret access key in the Details dropdown list at the top of these instructions. 
+
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3014313d-887b-4118-ac48-0da27c13728b" />
+
 
 Task 4: Configure the AWS CLI to connect to your AWS Account
 In the SSH session terminal window, run the configure command for the AWS CLI:
@@ -142,6 +149,10 @@ In the terminal window, test the IAM configuration by running the following comm
 
 aws iam list-users
 A successful test shows a JSON response that includes a list of IAM users in the account.
+
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/329608a5-c8a5-4b33-b0e2-9f099997aba3" />
+
 
 Activity 1 challenge
 Use the AWS CLI Command Reference documentation and AWS CLI to download the lab_policy document in a JSON-formatted IAM policy document. This is the same document that is in the AWS Management Console. 
@@ -176,6 +187,10 @@ Next, use the version number Arn information and DefaultVersionId found inside t
 ```plain
  aws iam get-policy-version --policy-arn arn:aws:iam::038946776283:policy/lab_policy --version-id v1 > lab_policy.json
 ```
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0c20bce7-d82e-414b-8490-f2c8e4f6c123" />
+
+
 Conclusion
 Congratulations! You now have successfully done the following:
 
