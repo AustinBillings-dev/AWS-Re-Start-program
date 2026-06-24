@@ -58,6 +58,11 @@ This tab lists all of the applications in the instance. Take a moment to review 
 
 You have successfully created a Systems Manager inventory association for your instance. Using Inventory, you can review and validate software configurations on your instances without needing to connect to each instance by using SSH.
 
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/27b7e16a-6d52-4b66-8b38-4472cffbb1d0" />
+
+
+
 Task 2: Install a Custom Application using Run Command
 In this task, you install a custom web application (Widget Manufacturing Dashboard) by using Run Command, a capability of Systems Manager.
 
@@ -120,6 +125,11 @@ Open a new web browser tab, paste the IP address that you copied, and press Ente
 
 You have successfully used Run Command through Systems Manager to install a custom application onto your instance without needing to remotely access the instance by using SSH.
 
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/9c256672-b7e4-4691-90f7-fdd2ac48cfc5" />
+
+
+
 Task 3: Use Parameter Store to manage application settings
 Parameter Store, a capability of Systems Manager, provides secure, hierarchical storage for configuration data management and secrets management. You can store data such as passwords, database strings, and license codes as parameter values. You can store values as plain text or encrypted data. You can then reference values by using the unique name that you specified when you created the parameter.
 
@@ -153,6 +163,11 @@ Return to the web browser tab that displays the application, and refresh the web
 Notice that three charts are displayed. The application is now checking Parameter Store to determine whether the additional chart (which is still in beta) should be displayed. It is common to configure applications to display "dark features" that are installed but not yet activated.
 
 Optional: Delete the parameter, and then refresh the browser tab with the application. The third chart disappears again.
+
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2df8b295-0009-4581-9db2-f9bf30eca66f" />
+
+
 
 Task 4: Use Session Manager to access instances
 With Session Manager, a capability of Systems Manager, you can manage your EC2 instances through an interactive one-step browser-based shell or through the AWS Command Line Interface (AWS CLI). Session Manager provides secure and auditable instance management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys. You can also use Session Manager to help comply with corporate policies that require controlled access to instances, strict security practices, and fully auditable logs with instance access details while still providing end users with one-step cross-platform access to your EC2 instances.
@@ -195,6 +210,11 @@ The output lists the EC2 instance details for the Managed Instance in JSON forma
 This task demonstrates how you can use Session Manager to log in to an instance without using SSH. You can also verify this capability by confirming that the SSH port is closed for the instance's security group.
 
 You can restrict access to Session Manager through AWS Identity and Access Management (IAM) policies, and AWS CloudTrail logs Session Manager usage. These options provide better security and auditing than traditional SSH access.
+
+
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/1c133024-d88a-45ce-a8b5-78e5be7cf867" />
+
 
 Conclusion
 Congratulations! You now have successfully done the following:
