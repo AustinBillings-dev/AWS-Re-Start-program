@@ -5,3 +5,6 @@ Technical Annotations
 Create Amazon Bedrock knowledge bases from HR handbooks.
 Create an Amazon Bedrock agent to answer HR questions.
 Create an Amazon Bedrock action group to submit vacation requests.
+
+Solution Request
+Use Amazon Bedrock to create a knowledge base and an agent. Attach the knowledge base to the agent and then add an action group. Test the agent to answer questions, pulled from the knowledge base, and perform actions through the 
