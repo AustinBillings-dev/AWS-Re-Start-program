@@ -301,11 +301,11 @@ After the training is complete, you are ready to test and evaluate the model. Ho
 Congratulations!
 You have completed this lab, and you can now end the lab by following the lab guide instructions.
 
-Click to add a c
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6ffb4d49-591c-4122-b8df-831bff361997" />
+
+
 ![Uploading image.png…]()
 
-
- 
 
 Conclusion
  You now have successfully:
