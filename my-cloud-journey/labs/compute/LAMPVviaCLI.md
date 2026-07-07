@@ -124,11 +124,18 @@ To display the contents of the user data script, run the following command:
 cat create-lamp-instance-userdata-v2.txt
 Notice how the user data script runs a series of commands on the instance after it is launched. These commands will install a web server, PHP, and a database server.
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/1d940cfe-327a-4393-b118-09b54d478625" />
+
+
 Task 3.2: Try to run the script
 Now that you have an idea what the shell script is designed to do, try to run it:
 
 ./create-lamp-instance-v2.sh
-	The script fails and exits without successfully completing. This behavior is expected.
+The script fails and exits without successfully completing. This behavior is expected.
+	
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c41a1cba-7ff2-4f5e-af58-e480002b20dc" />
+
 
 Task 3.3: Troubleshoot issues
 Issue #1
@@ -146,6 +153,10 @@ Try to connect to the webpage
 In a browser, navigate to the following address. Replace <public-ip> with the Public IPv4 address of the new instance that you created: http://<public-ip>
 
 The attempt fails. You need to resolve issue #2.
+
+Edit ami editor
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/8f2466dd-b1e8-4898-95a9-90cb2688ac2f" />
+
 
 Issue #2
 The run-instances command succeeded, and a public IP address was assigned to the new instance. However, you cannot load the test webpage.
