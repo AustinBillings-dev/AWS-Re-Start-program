@@ -279,7 +279,10 @@ The output parameter specifies that the output of the command should be in text.
 
 Note: The ID of the new instance has been stored in the INSTANCE environment variable.
 
+ <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ec933049-409d-441a-8002-adf5620512f8" />
  
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6a120134-ff18-48e8-a3e9-09be6b343d64" />
+
 
 Step 6: Wait for the instance to be ready
 You can monitor the status of the instance by using the AWS Management Console or by querying the status by using the AWS CLI.
@@ -300,7 +303,9 @@ aws ec2 describe-instances --instance-ids $INSTANCE --query 'Reservations[].Inst
 
 		Run this command again until it returns a status of running.
 
- 
+ <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/611b1c7c-1fd5-47c2-bbe6-30ecaa0fc347" />
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2817af5f-0057-4e87-b32b-e0fdba3c1ddd" />
 
 Step 7: Test the web server
 You can now test that the web server is working. You can retrieve a URL to the instance through the AWS CLI.
@@ -334,7 +339,8 @@ Launch by using a script when you need to automate the creation of an instance i
 
 Launch by using CloudFormation when you want to launch related resources together.
 
- 
+ <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/d9a6f982-2a94-4c8b-bd3f-9f7fb480c37c" />
+
 
 Optional challenge 1: Connect to an EC2 instance
  This challenge is optional and is provided in case you have lab time remaining.
