@@ -147,6 +147,7 @@ aws iam attach-user-policy --policy-arn arn:aws:iam::aws:policy/<policyYouFound>
 Return to the AWS Management Console, and refresh the browser tab.
 
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/00b95f4e-b19d-45ce-b28d-122756b740e5" />
 
  
 
@@ -181,6 +182,9 @@ To confirm that the files were extracted correctly, run the ls command.
 
 You should see a file named index.html and directories named css and images.
 
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/e9180683-d106-40c3-8d10-5bc96fa1f81b" />
+
  
 
 Task 7: Upload files to Amazon S3 by using the AWS CLI
@@ -206,6 +210,8 @@ Choose the Properties tab. At the bottom of the this tab, note that Static websi
 To open the URL on a new page, choose the Bucket website endpoint URL that displays.
 
 Congratulations, you have created a static website that is available to the public for viewing!
+
+
 
 Task 8: Create a batch file to make updating the website repeatable
 To create a repeatable deployment, you create a batch file by using the VI editor. 
@@ -255,6 +261,9 @@ To see the changes to the website, return to the browser and refresh the Café a
 Congratulations, you just made your first revision to the website!
 
 You now have a tool (the script that you created) that you can use to push changes from your website source files to Amazon S3.
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/81dfb25e-639b-4813-b3c6-b8ba9f00cb38" />
+
 
 Optional challenge
 Did you notice that your batch file uploads every file to Amazon S3 every time you run it even when most of the files have no changes to them?
