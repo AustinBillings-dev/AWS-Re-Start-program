@@ -617,12 +617,17 @@ ec2-volume-inuse-check: One compliant volume (attached to an instance) and one n
 
 AWS Config has a large library of pre-defined compliance checks, and you can create additional checks by writing your own AWS Config rule using Lambda.
 
- 
 
 Lab complete
 
 
-Working with AWS CloudTrail
+
+
+
+
+
+
+B) Working with AWS CloudTrail
  
 
 Activity overview
