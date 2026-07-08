@@ -417,6 +417,8 @@ In this activity, you will take on the role of Sofîa, and work on optimizing th
 Activity steps
 Duration: This activity requires approximately 50 minutes to complete.
 
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c546d68b-f3be-45e3-9d42-e42beef9af5f" />
  
 
 Accessing the AWS Management Console
